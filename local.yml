@@ -1,1 +1,10 @@
 
+---
+- hosts: localhost
+  gather_facts: true
+  become: true
+
+
+  tasks:
+    - name: run
+      command: useradd dsn
